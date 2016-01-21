@@ -1,0 +1,49 @@
+New log file opened at Thu Jan 21 00:46:06 IST 2016 by 26349@datsi03mac1234
+Taking next connection to: 50334
+New client attempting to connect on port: 50335-50334
+  Address = /192.168.1.6:50334
+This client on port 50335 has uuid 4db5a0d9-a387-473a-a6dd-26b8a6445dac configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-4db5a0d9-a387-473a-a6dd-26b8a6445dac
+Taking next connection to: 50334
+New client attempting to connect on port: 50352-50334
+  Address = /192.168.1.6:50334
+Handshake exception on socket: 50352
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50334
+New client attempting to connect on port: 50353-50334
+  Address = /192.168.1.6:50334
+This client on port 50353 has uuid ea5bd291-7384-438b-9ab9-ba42495d8aa7 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-ea5bd291-7384-438b-9ab9-ba42495d8aa7
+Taking next connection to: 50334
+New client attempting to connect on port: 50367-50334
+  Address = /192.168.1.6:50334
+Handshake exception on socket: 50367
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50334
+New client attempting to connect on port: 50368-50334
+  Address = /192.168.1.6:50334
+This client on port 50368 has uuid 589a4be5-a82b-484d-b329-ebe3893c8469 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-589a4be5-a82b-484d-b329-ebe3893c8469
+Taking next connection to: 50334
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 26349@datsi03mac1234 logs at Thu Jan 21 00:51:21 IST 2016, goodbye.

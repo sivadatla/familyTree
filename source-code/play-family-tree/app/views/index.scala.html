@@ -1,0 +1,60 @@
+@()
+
+@main("Welcome To Family Tree") {
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+        
+    	angular.module('familyTreeApp', []).controller('familyTreeCntrlr', function ($scope, $http) {
+    	
+    		$scope.persons1 = [];
+    		$scope.persons2 = [];
+
+	        $http({
+	                method: 'GET',
+	                url: '/persons',
+	                data: {}
+	        }).success(function (result) {
+            	$scope.persons1 = result;
+            	$scope.persons2 = result;
+	        });
+	    	
+    		$scope.relationships = [];
+
+	        $http({
+	                method: 'GET',
+	                url: '/relationships',
+	                data: {}
+	        }).success(function (result) {
+            	$scope.relationships = result;
+        	});
+    	
+	    });
+
+	</script>
+
+	<h2>Persons</h2>
+    < ul id="persons"></ul>
+<<!-- 
+	<div ng-app="familyTreeApp" ng-controller="familyTreeCntrlr">
+        <select id="firstSelect" ng-model="person" ng-options="e.firstName for e in persons1 track by e.id">
+        </select>
+        
+        <select id="relationshipId" ng-model="relationship" ng-options="e.name for e in relationships track by e.id"></select>
+        
+        <select id="secondSelect" ng-model="person" ng-options="e.firstName for e in persons2 track by e.id">
+        </select>
+    </div>
+ -->
+	<h2>Add Person</h2>
+    <form method="POST" action="@routes.Application.addPerson()">
+    
+        First Name : <input type="text" title="First Name" name="firstName"/><br/>
+        Last Name  : <input type="text" title="Last Name" name="lastName"/><br/>
+        <button>Add Person</button>
+    </form>
+    
+    
+
+    
+	}

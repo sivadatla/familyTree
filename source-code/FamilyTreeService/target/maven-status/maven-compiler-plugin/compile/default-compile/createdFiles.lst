@@ -1,0 +1,9 @@
+service/exc/ServiceException.class
+service/IRelationService.class
+service/model/Relation.class
+service/FamilyPerson.class
+service/model/Sex.class
+service/FamilyPersonFactory.class
+service/model/Relationship.class
+service/exc/ValidationException.class
+service/model/Person.class

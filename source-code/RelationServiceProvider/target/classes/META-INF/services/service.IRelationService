@@ -1,0 +1,8 @@
+service.FatherRelationSPI
+service.MotherRelationSPI
+service.SiblingRelationSPI
+service.SpouseRelationSPI
+service.ChildRelationSPI
+service.GrandParentRelationSPI
+service.OtherRelationSPI
+service.NoneRelationSPI

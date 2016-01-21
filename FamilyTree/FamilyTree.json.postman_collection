@@ -1,0 +1,291 @@
+{
+	"id": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+	"name": "FamilyTree",
+	"description": "",
+	"order": [
+		"7b8f520a-1e4a-565e-d8b9-cd40ed1f95c9",
+		"e209c9ae-7af3-7de6-1ea7-f86561d4456e",
+		"21a5d108-0ab1-3790-42d1-eb176043ef77",
+		"99ad56be-63eb-48d7-31df-7bdc6e400193",
+		"9400acf4-318f-9507-00a4-477885bd38df",
+		"d5d27e05-bef9-47a9-3528-dae747e1a4e7",
+		"68b587d3-2b78-a2ee-2239-7751743860e3",
+		"54c278f7-9b73-5eb1-40d2-604967336467"
+	],
+	"folders": [],
+	"timestamp": 1453094570859,
+	"owner": "151739",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "21a5d108-0ab1-3790-42d1-eb176043ef77",
+			"headers": "",
+			"url": "http://localhost:9000/api/person",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Seetha",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Datla",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sex",
+					"value": "FEMALE",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453120830505,
+			"name": "Create-Another Person",
+			"description": "",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"responses": []
+		},
+		{
+			"id": "54c278f7-9b73-5eb1-40d2-604967336467",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:9000/api/familyTree?id=person-1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Seetha",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Datla",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sex",
+					"value": "FEMALE",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453125151965,
+			"name": "printFamilyTree",
+			"description": "",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"responses": []
+		},
+		{
+			"id": "68b587d3-2b78-a2ee-2239-7751743860e3",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:9000/api/relation",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453121002613,
+			"name": "ADD-Relation",
+			"description": "",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"responses": [],
+			"rawModeData": "{\n    \"sourcePersonId\":\"person-1\",\n    \"relationshipId\":\"SPOUSE\",\n    \"destPersonId\":\"person-2\"\n}"
+		},
+		{
+			"id": "7b8f520a-1e4a-565e-d8b9-cd40ed1f95c9",
+			"headers": "",
+			"url": "http://localhost:9000/api/person",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Siva",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Datla",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "age",
+					"value": "35",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453095855284,
+			"name": "GET-Persons",
+			"description": "",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"responses": []
+		},
+		{
+			"id": "9400acf4-318f-9507-00a4-477885bd38df",
+			"headers": "",
+			"url": "http://localhost:9000/api/relationships",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Seetha",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Datla",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sex",
+					"value": "FEMALE",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "GET-Relationships",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1453096042467,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "99ad56be-63eb-48d7-31df-7bdc6e400193",
+			"headers": "",
+			"url": "http://localhost:9000/api/person",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Siva",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Datla",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sex",
+					"value": "MALE",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Update-Person",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1453106705032,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d5d27e05-bef9-47a9-3528-dae747e1a4e7",
+			"headers": "",
+			"url": "http://localhost:9000/api/relation",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453120575064,
+			"name": "GET-Relations",
+			"description": "",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"responses": []
+		},
+		{
+			"id": "e209c9ae-7af3-7de6-1ea7-f86561d4456e",
+			"headers": "",
+			"url": "http://localhost:9000/api/person",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Siva",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Datla",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sex",
+					"value": "MALE",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453096051030,
+			"name": "Create-Person",
+			"description": "",
+			"collectionId": "65d542c9-c462-407b-8ce1-206b56bcb5b3",
+			"responses": []
+		}
+	]
+}
